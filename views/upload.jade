@@ -1,0 +1,10 @@
+doctype html
+html
+	head
+		title= 上传文件
+		link(rel='stylesheet', href='/stylesheets/style.css')
+	body
+		div
+			form(action='/uploadFile',method='post',enctype="multipart/form-data" )
+				input(type='file',name='drama',accept=".txt")
+				input(type='submit',text='上传')
